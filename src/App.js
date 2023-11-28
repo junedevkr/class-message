@@ -24,22 +24,16 @@ function App() {
 }
 
 function Navigation() {
-  
-  const location = useLocation();
-  
-  if (location.pathname === '/class-message/') {
-    return (
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-  <div style={{ border: '1px solid #ccc', padding: '20px', marginBottom: '10px', textAlign: 'center', width: '200px' }}>
-    <Link to="/teacher" style={{ fontSize: '20px', textDecoration: 'none' }}>선생님</Link>
-  </div>
-  <div style={{ border: '1px solid #ccc', padding: '20px', marginTop: '10px', textAlign: 'center', width: '200px' }}>
-    <Link to="/student" style={{ fontSize: '20px', textDecoration: 'none' }}>학생</Link>
-  </div>
-</div>    );
-  } else {
-    return null;
-  }
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <div style={{ border: '1px solid #ccc', padding: '20px', marginBottom: '10px', textAlign: 'center', width: '200px' }}>
+        <Link to="/teacher" style={{ fontSize: '20px', textDecoration: 'none' }}>선생님</Link>
+      </div>
+      <div style={{ border: '1px solid #ccc', padding: '20px', marginTop: '10px', textAlign: 'center', width: '200px' }}>
+        <Link to="/student" style={{ fontSize: '20px', textDecoration: 'none' }}>학생</Link>
+      </div>
+    </div>
+  );
 }
 
 export default App;
