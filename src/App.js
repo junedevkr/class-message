@@ -24,9 +24,10 @@ function App() {
 }
 
 function Navigation() {
+  
   const location = useLocation();
   
-  if (location.pathname === '/') {
+  if (location.pathname === '/class-message') {
     return (
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
   <div style={{ border: '1px solid #ccc', padding: '20px', marginBottom: '10px', textAlign: 'center', width: '200px' }}>
